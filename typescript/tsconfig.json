@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "outFile": "dist/d3.js",
+        "sourceMap": true,
+        "declaration": true
+    },
+    "files": [
+        "d3.ts"
+    ]
+}
