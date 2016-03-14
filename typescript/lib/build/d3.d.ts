@@ -1,4 +1,4 @@
-/// <reference path="typings/main.d.ts" />
+/// <reference path="../typings/main.d.ts" />
 export * from "./arrays/bisect";
 export * from "./arrays/deviation";
 export * from "./arrays/entries";
@@ -11,6 +11,7 @@ export * from "./arrays/merge";
 export * from "./arrays/min";
 export * from "./arrays/nest";
 export * from "./arrays/pairs";
+export * from "./arrays/permute";
 export * from "./arrays/quantile";
 export * from "./arrays/range";
 export * from "./arrays/set";
@@ -20,4 +21,3 @@ export * from "./arrays/transpose";
 export * from "./arrays/values";
 export * from "./arrays/variance";
 export * from "./arrays/zip";
-

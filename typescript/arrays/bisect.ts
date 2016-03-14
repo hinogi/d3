@@ -1,7 +1,5 @@
 import {d3_ascending} from "./ascending";
 
-
-
 function d3_bisector(compare) {
   return {
     left: function(a, x, lo, hi) {
