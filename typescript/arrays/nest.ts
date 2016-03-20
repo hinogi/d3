@@ -1,14 +1,15 @@
-import map from "./map";
+import {map} from "./map";
+import {Nest} from "../types/Nest";
 
 // Possible use of native Map here
-export default function nest() {
+export function nest<T>(): Nest<T> {
   let nest: any = {},
-      keys = [],
-      sortKeys = [],
-      sortValues,
-      rollup;
+      keys: Array<string> = [],
+      sortKeys: Array<string> = [],
+      sortValues: Array<T> = [],
+      rollup: any;
 
-  function map(mapType, array, depth) {
+  function map(mapType: typeof map, array: Array<T>, depth: number): Map<any,any> {
     if (depth >= keys.length) return rollup
         ? rollup.call(nest, array) : (sortValues
         ? array.sort(sortValues)
