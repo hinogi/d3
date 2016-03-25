@@ -59,6 +59,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	/// <reference path="typings/main.d.ts" />
+	exports.version = ("[object Object]");
+	console.log(("[object Object]"));
 	__export(__webpack_require__(1));
 	__export(__webpack_require__(3));
 	__export(__webpack_require__(6));
@@ -71,16 +73,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	__export(__webpack_require__(14));
 	__export(__webpack_require__(15));
 	__export(__webpack_require__(16));
-	__export(__webpack_require__(17));
 	__export(__webpack_require__(12));
-	__export(__webpack_require__(18));
+	__export(__webpack_require__(17));
+	__export(__webpack_require__(19));
 	__export(__webpack_require__(20));
 	__export(__webpack_require__(21));
 	__export(__webpack_require__(22));
 	__export(__webpack_require__(23));
-	__export(__webpack_require__(24));
 	__export(__webpack_require__(4));
-	__export(__webpack_require__(25));
+	__export(__webpack_require__(24));
 
 
 /***/ },
@@ -89,39 +90,40 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	const ascending_1 = __webpack_require__(2);
-	function d3_bisector(compare) {
-	    return {
-	        left: function (a, x, lo, hi) {
-	            if (arguments.length < 3)
-	                lo = 0;
-	            if (arguments.length < 4)
-	                hi = a.length;
-	            while (lo < hi) {
-	                let mid = lo + hi >>> 1;
-	                if (compare(a[mid], x) < 0)
-	                    lo = mid + 1;
-	                else
-	                    hi = mid;
-	            }
-	            return lo;
-	        },
-	        right: function (a, x, lo, hi) {
-	            if (arguments.length < 3)
-	                lo = 0;
-	            if (arguments.length < 4)
-	                hi = a.length;
-	            while (lo < hi) {
-	                let mid = lo + hi >>> 1;
-	                if (compare(a[mid], x) > 0)
-	                    hi = mid;
-	                else
-	                    lo = mid + 1;
-	            }
-	            return lo;
+	class d3_bisector {
+	    constructor(compare) {
+	        this.compare = compare;
+	    }
+	    left(a, x, lo, hi) {
+	        if (arguments.length < 3)
+	            lo = 0;
+	        if (arguments.length < 4)
+	            hi = a.length;
+	        while (lo < hi) {
+	            let mid = lo + hi >>> 1;
+	            if (this.compare(a[mid], x) < 0)
+	                lo = mid + 1;
+	            else
+	                hi = mid;
 	        }
-	    };
+	        return lo;
+	    }
+	    right(a, x, lo, hi) {
+	        if (arguments.length < 3)
+	            lo = 0;
+	        if (arguments.length < 4)
+	            hi = a.length;
+	        while (lo < hi) {
+	            let mid = lo + hi >>> 1;
+	            if (this.compare(a[mid], x) > 0)
+	                hi = mid;
+	            else
+	                lo = mid + 1;
+	        }
+	        return lo;
+	    }
 	}
-	let d3_bisect = d3_bisector(ascending_1.d3_ascending);
+	let d3_bisect = new d3_bisector(ascending_1.d3_ascending);
 	let bisectLeft = d3_bisect.left;
 	exports.bisectLeft = bisectLeft;
 	let bisectRight = d3_bisect.right;
@@ -129,12 +131,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	let bisect = bisectRight;
 	exports.bisect = bisect;
 	function bisector(f) {
-	    return d3_bisector(f.length === 1
+	    return new d3_bisector(f.length === 1
 	        ? function (d, x) { return ascending_1.d3_ascending(f(d), x); }
 	        : f);
 	}
 	exports.bisector = bisector;
-	;
 
 
 /***/ },
@@ -142,10 +143,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	function d3_ascending(a, b) {
+	function ascending(a, b) {
 	    return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
 	}
-	exports.d3_ascending = d3_ascending;
+	exports.ascending = ascending;
+	exports.d3_ascending = ascending;
 
 
 /***/ },
@@ -158,8 +160,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    let v = variance_1.default.apply(this, arguments);
 	    return v ? Math.sqrt(v) : v;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = deviation;
+	exports.deviation = deviation;
 
 
 /***/ },
@@ -221,8 +222,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        entries.push({ key: key, value: map[key] });
 	    return entries;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = entries;
+	exports.entries = entries;
 
 
 /***/ },
@@ -230,14 +230,17 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
+	/**
+	 * Returns the enumerable property names of the specified object.
+	 * @param object a JavaScript object
+	 */
 	function keys(map) {
 	    let keys = [];
 	    for (let key in map)
 	        keys.push(key);
 	    return keys;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = keys;
+	exports.keys = keys;
 
 
 /***/ },
@@ -246,6 +249,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/// <reference path="../typings/main/ambient/es6-shim/index.d.ts" />
 	"use strict";
+	/**
+	 * Construct a new map by copying enumerable properties and values from the given object.
+	 */
 	function map(object, f) {
 	    let map = new Map();
 	    if (object instanceof Map) {
@@ -266,8 +272,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    return map;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = map;
+	exports.map = map;
 
 
 /***/ },
@@ -299,8 +304,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    return a;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = max;
+	exports.max = max;
 
 
 /***/ },
@@ -328,8 +332,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (j)
 	        return s / j;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = mean;
+	exports.mean = mean;
 
 
 /***/ },
@@ -355,8 +358,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (numbers.length)
 	        return quantile_1.default(numbers.sort(ascending_1.d3_ascending), 0.5);
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = median;
+	exports.median = median;
 	;
 
 
@@ -378,6 +380,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 13 */
 /***/ function(module, exports) {
 
+	/**
+	 * Merges the specified arrays into a single array.
+	 */
 	"use strict";
 	function merge(arrays) {
 	    let n = arrays.length, m, i = -1, j = 0, merged, array;
@@ -393,8 +398,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    return merged;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = merge;
+	exports.merge = merge;
 
 
 /***/ },
@@ -426,8 +430,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    return a;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = min;
+	exports.min = min;
 
 
 /***/ },
@@ -437,7 +440,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	"use strict";
 	// Possible use of native Map here
 	function nest() {
-	    let nest = {}, keys = [], sortKeys = [], sortValues, rollup;
+	    let nest = {}, keys = [], sortKeys = [], sortValues = [], rollup;
 	    function map(mapType, array, depth) {
 	        if (depth >= keys.length)
 	            return rollup
@@ -483,7 +486,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return map(mapType, array, 0);
 	    };
 	    nest.entries = function (array) {
-	        return entries(map(d3.map, array, 0), 0);
+	        return entries(map(map, array, 0), 0);
 	    };
 	    nest.key = function (d) {
 	        keys.push(d);
@@ -507,8 +510,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    return nest;
 	}
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = nest;
+	exports.nest = nest;
 
 
 /***/ },
@@ -528,22 +530,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 17 */
-/***/ function(module, exports) {
-
-	function permute(array, indexes) {
-	    let i = indexes.length, permutes = new Array(i);
-	    while (i--)
-	        permutes[i] = array[indexes[i]];
-	    return permutes;
-	}
-
-
-/***/ },
-/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const abs_1 = __webpack_require__(19);
+	const abs_1 = __webpack_require__(18);
 	function range(start, stop, step) {
 	    if (arguments.length < 3) {
 	        step = 1;
@@ -576,7 +566,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 19 */
+/* 18 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -584,7 +574,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 20 */
+/* 19 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -596,7 +586,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 21 */
+/* 20 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -618,7 +608,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 22 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -642,7 +632,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 23 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -666,7 +656,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 24 */
+/* 23 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -678,11 +668,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 25 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const transpose_1 = __webpack_require__(23);
+	const transpose_1 = __webpack_require__(22);
 	function zip() {
 	    return transpose_1.default(arguments);
 	}

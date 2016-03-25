@@ -4,8 +4,8 @@ import {Nest} from "../types/Nest";
 // Possible use of native Map here
 export function nest<T>(): Nest<T> {
   let nest: any = {},
-      keys: Array<string> = [],
-      sortKeys: Array<string> = [],
+      keys: Array<Nest<T>> = [],
+      sortKeys: Array<Nest<T>> = [],
       sortValues: Array<T> = [],
       rollup: any;
 
@@ -48,13 +48,13 @@ export function nest<T>(): Nest<T> {
     return object;
   }
 
-  function entries(map, depth) {
+  function entries(map: Array<T>, depth: number) {
     if (depth >= keys.length) return map;
 
-    let array = [],
+    let array: Array<any> = [],
         sortKey = sortKeys[depth++];
 
-    map.forEach(function(key, keyMap) {
+    map.forEach(function(key: string, keyMap: T) {
       array.push({key: key, values: entries(keyMap, depth)});
     });
 
@@ -67,18 +67,18 @@ export function nest<T>(): Nest<T> {
     return map(mapType, array, 0);
   };
 
-  nest.entries = function(array) {
-    return entries(map(d3.map, array, 0), 0);
+  nest.entries = function(array: T[]): Array<{key: string; values: any}> {
+    return entries(map(map, array, 0), 0);
   };
 
-  nest.key = function(d) {
+  nest.key = function(d: (datum: T) => string): Nest<T> {
     keys.push(d);
     return nest;
   };
 
   // Specifies the order for the most-recently specified key.
   // Note: only applies to entries. Map keys are unordered!
-  nest.sortKeys = function(order) {
+  nest.sortKeys = function(order: (a: T, b: T) => number): Nest<T> {
     sortKeys[keys.length - 1] = order;
     return nest;
   };

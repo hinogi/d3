@@ -1,7 +1,8 @@
-var webpack = require('webpack');
-var path = require('path');
-var libraryName = 'd3';
-var outputFile = libraryName + '.js';
+const webpack = require('webpack');
+const path = require('path');
+const libraryName = 'd3';
+const outputFile = libraryName + '.js';
+const childProcess = require('child_process').spawnSync;
 
 var config = {
   entry: __dirname + '/d3.ts',
@@ -25,10 +26,14 @@ var config = {
   resolve: {
     root: path.resolve('./src'),
     extensions: ['', '.ts']
-  }
-//   plugins: [
-//     new webpack.optimize.UglifyJsPlugin()
-//   ]
+  },
+  
+  plugins: [
+    // new webpack.optimize.UglifyJsPlugin()
+    new webpack.DefinePlugin({
+        __VERSION__: JSON.stringify(childProcess('git rev-list HEAD --count').toString())
+    })
+  ]
 };
 
 module.exports = config;

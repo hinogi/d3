@@ -1,4 +1,5 @@
 /// <reference path="../typings/main.d.ts" />
+export declare var version: string;
 export * from "./arrays/bisect";
 export * from "./arrays/deviation";
 export * from "./arrays/entries";
@@ -11,7 +12,6 @@ export * from "./arrays/merge";
 export * from "./arrays/min";
 export * from "./arrays/nest";
 export * from "./arrays/pairs";
-export * from "./arrays/permute";
 export * from "./arrays/quantile";
 export * from "./arrays/range";
 export * from "./arrays/set";

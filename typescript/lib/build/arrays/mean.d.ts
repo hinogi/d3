@@ -1,1 +1,2 @@
-export default function mean(array: any, f: any): number;
+export declare function mean(array: number[]): number;
+export declare function mean<T>(array: T[], accessor: (datum: T, index: number) => number): number;

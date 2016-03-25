@@ -1,4 +1,5 @@
 /// <reference path="typings/main.d.ts" />
+export var version: string = __VERSION__;
 export * from "./arrays/bisect";
 export * from "./arrays/deviation";
 export * from "./arrays/entries";

@@ -1,1 +1,1 @@
-export default function median(array: any, f: any): number;
+export declare function median(array: Array<any>, f?: Function): number;
