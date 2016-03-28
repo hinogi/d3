@@ -1,2 +1,1 @@
-import transpose from "./transpose";
-export default function zip(): any[] | ((matrix: any) => undefined[] | typeof transpose);
+export default function zip<T>(...arrays: Array<Array<T>>): Array<Array<T>>;

@@ -52,11 +52,13 @@
   },
   "devDependencies": {
     "babel": "^6.5.2",
+    "eslint": "^2.5.1",
     "jsdom": "3",
     "path": "^0.12.7",
     "seedrandom": "2",
     "smash": "0.0",
     "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
     "uglify-js": "2.6.1",
     "vows": "0.8",
     "webpack": "^1.12.14"

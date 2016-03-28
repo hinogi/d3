@@ -1,0 +1,1337 @@
+Hash: 8e537f468309021f6509
+Version: webpack 1.12.14
+Time: 3267ms
+                      Asset       Size  Chunks             Chunk Names
+    build/arrays/merge.d.ts  129 bytes          [emitted]  
+              build/d3.d.ts  760 bytes          [emitted]  
+build/arrays/ascending.d.ts  157 bytes          [emitted]  
+build/arrays/deviation.d.ts  165 bytes          [emitted]  
+ build/arrays/variance.d.ts   62 bytes          [emitted]  
+     build/math/number.d.ts  104 bytes          [emitted]  
+  build/arrays/entries.d.ts  616 bytes          [emitted]  
+     build/arrays/keys.d.ts  176 bytes          [emitted]  
+      build/arrays/map.d.ts  884 bytes          [emitted]  
+      build/arrays/max.d.ts    1.14 kB          [emitted]  
+     build/arrays/mean.d.ts  155 bytes          [emitted]  
+   build/arrays/median.d.ts   73 bytes          [emitted]  
+ build/arrays/quantile.d.ts   63 bytes          [emitted]  
+   build/arrays/bisect.d.ts  761 bytes          [emitted]  
+      build/arrays/min.d.ts  941 bytes          [emitted]  
+     build/arrays/nest.d.ts   82 bytes          [emitted]  
+    build/arrays/pairs.d.ts   50 bytes          [emitted]  
+    build/arrays/range.d.ts   72 bytes          [emitted]  
+        build/math/abs.d.ts   17 bytes          [emitted]  
+      build/arrays/set.d.ts   50 bytes          [emitted]  
+  build/arrays/shuffle.d.ts   68 bytes          [emitted]  
+      build/arrays/sum.d.ts   57 bytes          [emitted]  
+build/arrays/transpose.d.ts  113 bytes          [emitted]  
+   build/arrays/values.d.ts   47 bytes          [emitted]  
+      build/arrays/zip.d.ts  127 bytes          [emitted]  
+                      d3.js    17.7 kB       0  [emitted]  main
+                  d3.js.map    36.8 kB       0  [emitted]  main
+    + 25 hidden modules
+
+ERROR in ./arrays/zip.ts
+(3,25): error TS7010: 'zip', which lacks return-type annotation, implicitly has an 'any[] | ((matrix: any) => undefined[] | typeof transpose)' return type.
+
+ERROR in ./arrays/values.ts
+(2,32): error TS7006: Parameter 'map' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(1,8): error TS1192: Module '"/home/stefan/git/d3/typescript/arrays/min"' has no default export.
+
+ERROR in ./arrays/transpose.ts
+(3,25): error TS2354: No best common type exists among return expressions.
+
+ERROR in ./arrays/transpose.ts
+(3,35): error TS7006: Parameter 'matrix' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(4,9): error TS2304: Cannot find name 'n'.
+
+ERROR in ./arrays/transpose.ts
+(6,22): error TS7005: Variable 'n' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(13,29): error TS7006: Parameter 'd' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,33): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,40): error TS7006: Parameter 'i0' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,44): error TS7006: Parameter 'i1' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(2,8): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(2,60): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(3,20): error TS7005: Variable 't' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(3,23): error TS7005: Variable 'i' implicitly has an 'any' type.
+
+ERROR in ./arrays/set.ts
+(1,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./math/abs.ts
+(1,16): error TS1109: Expression expected.
+
+ERROR in ./math/abs.ts
+(1,1): error TS2304: Cannot find name '(Missing)'.
+
+ERROR in ./arrays/range.ts
+(3,31): error TS7006: Parameter 'start' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,38): error TS7006: Parameter 'stop' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,44): error TS7006: Parameter 'step' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(12,7): error TS7005: Variable 'range' implicitly has an 'any[]' type.
+
+ERROR in ./arrays/range.ts
+(15,8): error TS7005: Variable 'j' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(22,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(1,31): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(2,36): error TS7005: Variable 'p0' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(2,20): error TS2307: Cannot find module '../types/Nest'.
+
+ERROR in ./arrays/nest.ts
+(15,22): error TS2345: Argument of type 'T[]' is not assignable to parameter of type '(a: T, b: T) => number'.
+  Type 'T[]' provides no match for the signature '(a: T, b: T): number'
+
+ERROR in ./arrays/nest.ts
+(21,9): error TS7005: Variable 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(22,9): error TS7005: Variable 'object' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(23,9): error TS7005: Variable 'setter' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(25,9): error TS7005: Variable 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(36,16): error TS2346: Supplied parameters do not match any signature of call target.
+
+ERROR in ./arrays/nest.ts
+(37,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(37,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(57,17): error TS2345: Argument of type '(key: string, keyMap: T) => void' is not assignable to parameter of type '(value: T, index: number, array: T[]) => void'.
+  Types of parameters 'key' and 'value' are incompatible.
+    Type 'T' is not assignable to type 'string'.
+
+ERROR in ./arrays/nest.ts
+(58,45): error TS2345: Argument of type 'T' is not assignable to parameter of type 'T[]'.
+
+ERROR in ./arrays/nest.ts
+(66,23): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(66,30): error TS7006: Parameter 'mapType' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(71,20): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'T[]'.
+  Property 'length' is missing in type 'Map<any, any>'.
+
+ERROR in ./arrays/nest.ts
+(88,30): error TS7006: Parameter 'order' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(93,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/min.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./arrays/min.ts
+(11,17): error TS2394: Overload signature is not compatible with function implementation.
+
+ERROR in ./arrays/quantile.ts
+(2,34): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/quantile.ts
+(2,42): error TS7006: Parameter 'p' implicitly has an 'any' type.
+
+ERROR in ./arrays/max.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./math/number.ts
+(1,27): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./math/number.ts
+(5,28): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,34): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,41): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(7,7): error TS7005: Variable 'd' implicitly has an 'any' type.
+Hash: 650231b8e8fc722c7e77
+Version: webpack 1.12.14
+Time: 1228ms
+                Asset      Size  Chunks             Chunk Names
+build/arrays/zip.d.ts  77 bytes          [emitted]  
+                d3.js   17.8 kB       0  [emitted]  main
+            d3.js.map   36.9 kB       0  [emitted]  main
+    + 25 hidden modules
+
+ERROR in ./arrays/zip.ts
+(4,12): error TS2322: Type 'undefined[] | ((matrix: any) => undefined[] | typeof transpose)' is not assignable to type 'T[][]'.
+  Type '(matrix: any) => undefined[] | typeof transpose' is not assignable to type 'T[][]'.
+    Property 'find' is missing in type '(matrix: any) => undefined[] | typeof transpose'.
+
+ERROR in ./arrays/values.ts
+(2,32): error TS7006: Parameter 'map' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(1,8): error TS1192: Module '"/home/stefan/git/d3/typescript/arrays/min"' has no default export.
+
+ERROR in ./arrays/transpose.ts
+(3,25): error TS2354: No best common type exists among return expressions.
+
+ERROR in ./arrays/transpose.ts
+(3,35): error TS7006: Parameter 'matrix' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(4,9): error TS2304: Cannot find name 'n'.
+
+ERROR in ./arrays/transpose.ts
+(6,22): error TS7005: Variable 'n' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(13,29): error TS7006: Parameter 'd' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,33): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,40): error TS7006: Parameter 'i0' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,44): error TS7006: Parameter 'i1' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(2,8): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(2,60): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(3,20): error TS7005: Variable 't' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(3,23): error TS7005: Variable 'i' implicitly has an 'any' type.
+
+ERROR in ./arrays/set.ts
+(1,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./math/abs.ts
+(1,16): error TS1109: Expression expected.
+
+ERROR in ./arrays/range.ts
+(3,31): error TS7006: Parameter 'start' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,38): error TS7006: Parameter 'stop' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,44): error TS7006: Parameter 'step' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(12,7): error TS7005: Variable 'range' implicitly has an 'any[]' type.
+
+ERROR in ./arrays/range.ts
+(15,8): error TS7005: Variable 'j' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(22,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(1,31): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(2,36): error TS7005: Variable 'p0' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(2,20): error TS2307: Cannot find module '../types/Nest'.
+
+ERROR in ./arrays/nest.ts
+(15,22): error TS2345: Argument of type 'T[]' is not assignable to parameter of type '(a: T, b: T) => number'.
+  Type 'T[]' provides no match for the signature '(a: T, b: T): number'
+
+ERROR in ./arrays/nest.ts
+(21,9): error TS7005: Variable 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(22,9): error TS7005: Variable 'object' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(23,9): error TS7005: Variable 'setter' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(25,9): error TS7005: Variable 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(36,16): error TS2346: Supplied parameters do not match any signature of call target.
+
+ERROR in ./arrays/nest.ts
+(37,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(37,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(57,17): error TS2345: Argument of type '(key: string, keyMap: T) => void' is not assignable to parameter of type '(value: T, index: number, array: T[]) => void'.
+  Types of parameters 'key' and 'value' are incompatible.
+    Type 'T' is not assignable to type 'string'.
+
+ERROR in ./arrays/nest.ts
+(58,45): error TS2345: Argument of type 'T' is not assignable to parameter of type 'T[]'.
+
+ERROR in ./arrays/nest.ts
+(66,23): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(66,30): error TS7006: Parameter 'mapType' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(71,20): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'T[]'.
+  Property 'find' is missing in type 'Map<any, any>'.
+
+ERROR in ./arrays/nest.ts
+(88,30): error TS7006: Parameter 'order' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(93,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/min.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./arrays/min.ts
+(11,17): error TS2394: Overload signature is not compatible with function implementation.
+
+ERROR in ./arrays/quantile.ts
+(2,34): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/quantile.ts
+(2,42): error TS7006: Parameter 'p' implicitly has an 'any' type.
+
+ERROR in ./arrays/max.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./math/number.ts
+(1,27): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./math/number.ts
+(5,28): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,34): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,41): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(7,7): error TS7005: Variable 'd' implicitly has an 'any' type.
+Hash: 0c151e2085f56028f6d8
+Version: webpack 1.12.14
+Time: 1211ms
+                      Asset      Size  Chunks             Chunk Names
+build/arrays/transpose.d.ts  68 bytes          [emitted]  
+                      d3.js   17.4 kB       0  [emitted]  main
+                  d3.js.map   35.7 kB       0  [emitted]  main
+    + 25 hidden modules
+
+ERROR in ./arrays/zip.ts
+(4,22): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type '{}[][]'.
+  Property 'find' is missing in type 'IArguments'.
+
+ERROR in ./arrays/values.ts
+(2,32): error TS7006: Parameter 'map' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(3,62): error TS1144: '{' or ';' expected.
+
+ERROR in ./arrays/transpose.ts
+(4,7): error TS1138: Parameter declaration expected.
+
+ERROR in ./arrays/transpose.ts
+(4,27): error TS1005: ';' expected.
+
+ERROR in ./arrays/transpose.ts
+(11,1): error TS1128: Declaration or statement expected.
+
+ERROR in ./arrays/transpose.ts
+(5,3): error TS7027: Unreachable code detected.
+
+ERROR in ./arrays/transpose.ts
+(1,8): error TS1192: Module '"/home/stefan/git/d3/typescript/arrays/min"' has no default export.
+
+ERROR in ./arrays/transpose.ts
+(3,25): error TS7010: 'transpose', which lacks return-type annotation, implicitly has an 'any' return type.
+
+ERROR in ./arrays/transpose.ts
+(3,62): error TS2365: Operator '<' cannot be applied to types 'boolean' and 'number'.
+
+ERROR in ./arrays/transpose.ts
+(3,74): error TS2304: Cannot find name 'T'.
+
+ERROR in ./arrays/transpose.ts
+(3,78): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number' or an enum type.
+
+ERROR in ./arrays/transpose.ts
+(4,9): error TS2304: Cannot find name 'n'.
+
+ERROR in ./arrays/transpose.ts
+(4,13): error TS2304: Cannot find name 'matrix'.
+
+ERROR in ./arrays/transpose.ts
+(5,28): error TS2304: Cannot find name 'matrix'.
+
+ERROR in ./arrays/transpose.ts
+(6,22): error TS7005: Variable 'n' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(7,16): error TS2304: Cannot find name 'matrix'.
+
+ERROR in ./arrays/transpose.ts
+(13,29): error TS7006: Parameter 'd' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,33): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,40): error TS7006: Parameter 'i0' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,44): error TS7006: Parameter 'i1' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(2,8): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(2,60): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(3,20): error TS7005: Variable 't' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(3,23): error TS7005: Variable 'i' implicitly has an 'any' type.
+
+ERROR in ./arrays/set.ts
+(1,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./math/abs.ts
+(1,16): error TS1109: Expression expected.
+
+ERROR in ./arrays/range.ts
+(3,31): error TS7006: Parameter 'start' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,38): error TS7006: Parameter 'stop' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,44): error TS7006: Parameter 'step' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(12,7): error TS7005: Variable 'range' implicitly has an 'any[]' type.
+
+ERROR in ./arrays/range.ts
+(15,8): error TS7005: Variable 'j' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(22,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(1,31): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(2,36): error TS7005: Variable 'p0' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(2,20): error TS2307: Cannot find module '../types/Nest'.
+
+ERROR in ./arrays/nest.ts
+(15,22): error TS2345: Argument of type 'T[]' is not assignable to parameter of type '(a: T, b: T) => number'.
+  Type 'T[]' provides no match for the signature '(a: T, b: T): number'
+
+ERROR in ./arrays/nest.ts
+(21,9): error TS7005: Variable 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(22,9): error TS7005: Variable 'object' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(23,9): error TS7005: Variable 'setter' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(25,9): error TS7005: Variable 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(36,16): error TS2346: Supplied parameters do not match any signature of call target.
+
+ERROR in ./arrays/nest.ts
+(37,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(37,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(57,17): error TS2345: Argument of type '(key: string, keyMap: T) => void' is not assignable to parameter of type '(value: T, index: number, array: T[]) => void'.
+  Types of parameters 'key' and 'value' are incompatible.
+    Type 'T' is not assignable to type 'string'.
+
+ERROR in ./arrays/nest.ts
+(58,45): error TS2345: Argument of type 'T' is not assignable to parameter of type 'T[]'.
+
+ERROR in ./arrays/nest.ts
+(66,23): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(66,30): error TS7006: Parameter 'mapType' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(71,20): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'T[]'.
+  Property 'find' is missing in type 'Map<any, any>'.
+
+ERROR in ./arrays/nest.ts
+(88,30): error TS7006: Parameter 'order' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(93,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/min.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./arrays/min.ts
+(11,17): error TS2394: Overload signature is not compatible with function implementation.
+
+ERROR in ./arrays/quantile.ts
+(2,34): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/quantile.ts
+(2,42): error TS7006: Parameter 'p' implicitly has an 'any' type.
+
+ERROR in ./arrays/max.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./math/number.ts
+(1,27): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./math/number.ts
+(5,28): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,34): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,41): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(7,7): error TS7005: Variable 'd' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+Module parse failed: /home/stefan/git/d3/node_modules/ts-loader/index.js!/home/stefan/git/d3/typescript/arrays/transpose.ts Line 6: Illegal return statement
+You may need an appropriate loader to handle this file type.
+|     if: function () { } };
+| !(n = matrix.length);
+| return [];
+| for (var i = -1, m = min_1.default(matrix, d3_transposeLength), transpose_1 = new Array(m); ++i < m;) {
+|     for (var j = -1, n = void 0, row = transpose_1[i] = new Array(n); ++j < n;) {
+ @ ./d3.ts 24:9-38
+Hash: 4e0c1eb3e752e5491d9c
+Version: webpack 1.12.14
+Time: 1185ms
+                      Asset      Size  Chunks             Chunk Names
+build/arrays/transpose.d.ts  80 bytes          [emitted]  
+                      d3.js   17.8 kB       0  [emitted]  main
+                  d3.js.map   36.9 kB       0  [emitted]  main
+    + 25 hidden modules
+
+ERROR in ./arrays/zip.ts
+(4,22): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type '{}[][]'.
+  Property 'find' is missing in type 'IArguments'.
+
+ERROR in ./arrays/values.ts
+(2,32): error TS7006: Parameter 'map' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(1,8): error TS1192: Module '"/home/stefan/git/d3/typescript/arrays/min"' has no default export.
+
+ERROR in ./arrays/transpose.ts
+(4,9): error TS2304: Cannot find name 'n'.
+
+ERROR in ./arrays/transpose.ts
+(6,22): error TS7005: Variable 'n' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(10,10): error TS2322: Type '<T>(matrix: T[][]) => T[][]' is not assignable to type 'T[][]'.
+  Property 'find' is missing in type '<T>(matrix: T[][]) => T[][]'.
+
+ERROR in ./arrays/transpose.ts
+(13,29): error TS7006: Parameter 'd' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,33): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,40): error TS7006: Parameter 'i0' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,44): error TS7006: Parameter 'i1' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(2,8): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(2,60): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(3,20): error TS7005: Variable 't' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(3,23): error TS7005: Variable 'i' implicitly has an 'any' type.
+
+ERROR in ./arrays/set.ts
+(1,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./math/abs.ts
+(1,16): error TS1109: Expression expected.
+
+ERROR in ./arrays/range.ts
+(3,31): error TS7006: Parameter 'start' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,38): error TS7006: Parameter 'stop' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,44): error TS7006: Parameter 'step' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(12,7): error TS7005: Variable 'range' implicitly has an 'any[]' type.
+
+ERROR in ./arrays/range.ts
+(15,8): error TS7005: Variable 'j' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(22,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(1,31): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(2,36): error TS7005: Variable 'p0' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(2,20): error TS2307: Cannot find module '../types/Nest'.
+
+ERROR in ./arrays/nest.ts
+(15,22): error TS2345: Argument of type 'T[]' is not assignable to parameter of type '(a: T, b: T) => number'.
+  Type 'T[]' provides no match for the signature '(a: T, b: T): number'
+
+ERROR in ./arrays/nest.ts
+(21,9): error TS7005: Variable 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(22,9): error TS7005: Variable 'object' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(23,9): error TS7005: Variable 'setter' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(25,9): error TS7005: Variable 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(36,16): error TS2346: Supplied parameters do not match any signature of call target.
+
+ERROR in ./arrays/nest.ts
+(37,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(37,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(57,17): error TS2345: Argument of type '(key: string, keyMap: T) => void' is not assignable to parameter of type '(value: T, index: number, array: T[]) => void'.
+  Types of parameters 'key' and 'value' are incompatible.
+    Type 'T' is not assignable to type 'string'.
+
+ERROR in ./arrays/nest.ts
+(58,45): error TS2345: Argument of type 'T' is not assignable to parameter of type 'T[]'.
+
+ERROR in ./arrays/nest.ts
+(66,23): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(66,30): error TS7006: Parameter 'mapType' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(71,20): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'T[]'.
+  Property 'find' is missing in type 'Map<any, any>'.
+
+ERROR in ./arrays/nest.ts
+(88,30): error TS7006: Parameter 'order' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(93,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/min.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./arrays/min.ts
+(11,17): error TS2394: Overload signature is not compatible with function implementation.
+
+ERROR in ./arrays/quantile.ts
+(2,34): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/quantile.ts
+(2,42): error TS7006: Parameter 'p' implicitly has an 'any' type.
+
+ERROR in ./arrays/max.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./math/number.ts
+(1,27): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./math/number.ts
+(5,28): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,34): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,41): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(7,7): error TS7005: Variable 'd' implicitly has an 'any' type.
+Hash: 81c466198d0683a41fa7
+Version: webpack 1.12.14
+Time: 1027ms
+                      Asset      Size  Chunks             Chunk Names
+build/arrays/transpose.d.ts  80 bytes          [emitted]  
+                      d3.js   17.8 kB       0  [emitted]  main
+                  d3.js.map   36.9 kB       0  [emitted]  main
+    + 25 hidden modules
+
+ERROR in ./arrays/zip.ts
+(4,22): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type '{}[][]'.
+  Property 'find' is missing in type 'IArguments'.
+
+ERROR in ./arrays/values.ts
+(2,32): error TS7006: Parameter 'map' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(4,9): error TS2304: Cannot find name 'n'.
+
+ERROR in ./arrays/transpose.ts
+(6,22): error TS7005: Variable 'n' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(10,10): error TS2322: Type '<T>(matrix: T[][]) => T[][]' is not assignable to type 'T[][]'.
+  Property 'find' is missing in type '<T>(matrix: T[][]) => T[][]'.
+
+ERROR in ./arrays/transpose.ts
+(13,29): error TS7006: Parameter 'd' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,33): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,40): error TS7006: Parameter 'i0' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,44): error TS7006: Parameter 'i1' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(2,8): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(2,60): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(3,20): error TS7005: Variable 't' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(3,23): error TS7005: Variable 'i' implicitly has an 'any' type.
+
+ERROR in ./arrays/set.ts
+(1,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./math/abs.ts
+(1,16): error TS1109: Expression expected.
+
+ERROR in ./arrays/range.ts
+(3,31): error TS7006: Parameter 'start' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,38): error TS7006: Parameter 'stop' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,44): error TS7006: Parameter 'step' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(12,7): error TS7005: Variable 'range' implicitly has an 'any[]' type.
+
+ERROR in ./arrays/range.ts
+(15,8): error TS7005: Variable 'j' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(22,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(1,31): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(2,36): error TS7005: Variable 'p0' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(2,20): error TS2307: Cannot find module '../types/Nest'.
+
+ERROR in ./arrays/nest.ts
+(15,22): error TS2345: Argument of type 'T[]' is not assignable to parameter of type '(a: T, b: T) => number'.
+  Type 'T[]' provides no match for the signature '(a: T, b: T): number'
+
+ERROR in ./arrays/nest.ts
+(21,9): error TS7005: Variable 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(22,9): error TS7005: Variable 'object' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(23,9): error TS7005: Variable 'setter' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(25,9): error TS7005: Variable 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(36,16): error TS2346: Supplied parameters do not match any signature of call target.
+
+ERROR in ./arrays/nest.ts
+(37,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(37,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(57,17): error TS2345: Argument of type '(key: string, keyMap: T) => void' is not assignable to parameter of type '(value: T, index: number, array: T[]) => void'.
+  Types of parameters 'key' and 'value' are incompatible.
+    Type 'T' is not assignable to type 'string'.
+
+ERROR in ./arrays/nest.ts
+(58,45): error TS2345: Argument of type 'T' is not assignable to parameter of type 'T[]'.
+
+ERROR in ./arrays/nest.ts
+(66,23): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(66,30): error TS7006: Parameter 'mapType' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(71,20): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'T[]'.
+  Property 'find' is missing in type 'Map<any, any>'.
+
+ERROR in ./arrays/nest.ts
+(88,30): error TS7006: Parameter 'order' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(93,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/min.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./arrays/min.ts
+(11,17): error TS2394: Overload signature is not compatible with function implementation.
+
+ERROR in ./arrays/quantile.ts
+(2,34): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/quantile.ts
+(2,42): error TS7006: Parameter 'p' implicitly has an 'any' type.
+
+ERROR in ./arrays/max.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./math/number.ts
+(1,27): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./math/number.ts
+(5,28): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,34): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,41): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(7,7): error TS7005: Variable 'd' implicitly has an 'any' type.
+Hash: 7d02cc855d8a968307ef
+Version: webpack 1.12.14
+Time: 1210ms
+                      Asset      Size  Chunks             Chunk Names
+build/arrays/transpose.d.ts  80 bytes          [emitted]  
+                      d3.js   17.8 kB       0  [emitted]  main
+                  d3.js.map     37 kB       0  [emitted]  main
+    + 25 hidden modules
+
+ERROR in ./arrays/zip.ts
+(4,22): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type '{}[][]'.
+  Property 'find' is missing in type 'IArguments'.
+
+ERROR in ./arrays/values.ts
+(2,32): error TS7006: Parameter 'map' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(7,22): error TS7005: Variable 'n' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(11,10): error TS2322: Type '<T>(matrix: T[][]) => T[][]' is not assignable to type 'T[][]'.
+  Property 'find' is missing in type '<T>(matrix: T[][]) => T[][]'.
+
+ERROR in ./arrays/transpose.ts
+(14,29): error TS7006: Parameter 'd' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,33): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,40): error TS7006: Parameter 'i0' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,44): error TS7006: Parameter 'i1' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(2,8): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(2,60): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(3,20): error TS7005: Variable 't' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(3,23): error TS7005: Variable 'i' implicitly has an 'any' type.
+
+ERROR in ./arrays/set.ts
+(1,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./math/abs.ts
+(1,16): error TS1109: Expression expected.
+
+ERROR in ./arrays/range.ts
+(3,31): error TS7006: Parameter 'start' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,38): error TS7006: Parameter 'stop' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,44): error TS7006: Parameter 'step' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(12,7): error TS7005: Variable 'range' implicitly has an 'any[]' type.
+
+ERROR in ./arrays/range.ts
+(15,8): error TS7005: Variable 'j' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(22,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(1,31): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(2,36): error TS7005: Variable 'p0' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(2,20): error TS2307: Cannot find module '../types/Nest'.
+
+ERROR in ./arrays/nest.ts
+(15,22): error TS2345: Argument of type 'T[]' is not assignable to parameter of type '(a: T, b: T) => number'.
+  Type 'T[]' provides no match for the signature '(a: T, b: T): number'
+
+ERROR in ./arrays/nest.ts
+(21,9): error TS7005: Variable 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(22,9): error TS7005: Variable 'object' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(23,9): error TS7005: Variable 'setter' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(25,9): error TS7005: Variable 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(36,16): error TS2346: Supplied parameters do not match any signature of call target.
+
+ERROR in ./arrays/nest.ts
+(37,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(37,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(57,17): error TS2345: Argument of type '(key: string, keyMap: T) => void' is not assignable to parameter of type '(value: T, index: number, array: T[]) => void'.
+  Types of parameters 'key' and 'value' are incompatible.
+    Type 'T' is not assignable to type 'string'.
+
+ERROR in ./arrays/nest.ts
+(58,45): error TS2345: Argument of type 'T' is not assignable to parameter of type 'T[]'.
+
+ERROR in ./arrays/nest.ts
+(66,23): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(66,30): error TS7006: Parameter 'mapType' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(71,20): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'T[]'.
+  Property 'find' is missing in type 'Map<any, any>'.
+
+ERROR in ./arrays/nest.ts
+(88,30): error TS7006: Parameter 'order' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(93,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/min.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./arrays/min.ts
+(11,17): error TS2394: Overload signature is not compatible with function implementation.
+
+ERROR in ./arrays/quantile.ts
+(2,34): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/quantile.ts
+(2,42): error TS7006: Parameter 'p' implicitly has an 'any' type.
+
+ERROR in ./arrays/max.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./math/number.ts
+(1,27): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./math/number.ts
+(5,28): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,34): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,41): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(7,7): error TS7005: Variable 'd' implicitly has an 'any' type.
+Hash: c203315bcba09161cdd0
+Version: webpack 1.12.14
+Time: 1258ms
+                      Asset      Size  Chunks             Chunk Names
+build/arrays/transpose.d.ts  80 bytes          [emitted]  
+                      d3.js   17.8 kB       0  [emitted]  main
+                  d3.js.map     37 kB       0  [emitted]  main
+    + 25 hidden modules
+
+ERROR in ./arrays/zip.ts
+(4,22): error TS2345: Argument of type 'IArguments' is not assignable to parameter of type '{}[][]'.
+  Property 'find' is missing in type 'IArguments'.
+
+ERROR in ./arrays/values.ts
+(2,32): error TS7006: Parameter 'map' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(6,24): error TS2453: The type argument for type parameter 'T' cannot be inferred from the usage. Consider specifying the type arguments explicitly.
+  Type argument candidate 'T[]' is not a valid type argument because it is not a supertype of candidate 'any[][]'.
+    Type 'any[]' is not assignable to type 'T'.
+
+ERROR in ./arrays/transpose.ts
+(7,22): error TS7005: Variable 'n' implicitly has an 'any' type.
+
+ERROR in ./arrays/transpose.ts
+(11,10): error TS2322: Type '<T>(matrix: T[][]) => T[][]' is not assignable to type 'T[][]'.
+  Property 'find' is missing in type '<T>(matrix: T[][]) => T[][]'.
+
+ERROR in ./arrays/transpose.ts
+(14,44): error TS2304: Cannot find name 'T'.
+
+ERROR in ./arrays/sum.ts
+(3,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(3,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/sum.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,33): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,40): error TS7006: Parameter 'i0' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(1,44): error TS7006: Parameter 'i1' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(2,8): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(2,60): error TS2448: Block-scoped variable 'm' used before its declaration.
+
+ERROR in ./arrays/shuffle.ts
+(3,20): error TS7005: Variable 't' implicitly has an 'any' type.
+
+ERROR in ./arrays/shuffle.ts
+(3,23): error TS7005: Variable 'i' implicitly has an 'any' type.
+
+ERROR in ./arrays/set.ts
+(1,29): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./math/abs.ts
+(1,16): error TS1109: Expression expected.
+
+ERROR in ./arrays/range.ts
+(3,31): error TS7006: Parameter 'start' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,38): error TS7006: Parameter 'stop' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(3,44): error TS7006: Parameter 'step' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(12,7): error TS7005: Variable 'range' implicitly has an 'any[]' type.
+
+ERROR in ./arrays/range.ts
+(15,8): error TS7005: Variable 'j' implicitly has an 'any' type.
+
+ERROR in ./arrays/range.ts
+(22,32): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(1,31): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/pairs.ts
+(2,36): error TS7005: Variable 'p0' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(2,20): error TS2307: Cannot find module '../types/Nest'.
+
+ERROR in ./arrays/nest.ts
+(15,22): error TS2345: Argument of type 'T[]' is not assignable to parameter of type '(a: T, b: T) => number'.
+  Type 'T[]' provides no match for the signature '(a: T, b: T): number'
+
+ERROR in ./arrays/nest.ts
+(21,9): error TS7005: Variable 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(22,9): error TS7005: Variable 'object' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(23,9): error TS7005: Variable 'setter' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(25,9): error TS7005: Variable 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(36,16): error TS2346: Supplied parameters do not match any signature of call target.
+
+ERROR in ./arrays/nest.ts
+(37,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(37,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,17): error TS7006: Parameter 'keyValue' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(42,27): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(57,17): error TS2345: Argument of type '(key: string, keyMap: T) => void' is not assignable to parameter of type '(value: T, index: number, array: T[]) => void'.
+  Types of parameters 'key' and 'value' are incompatible.
+    Type 'T' is not assignable to type 'string'.
+
+ERROR in ./arrays/nest.ts
+(58,45): error TS2345: Argument of type 'T' is not assignable to parameter of type 'T[]'.
+
+ERROR in ./arrays/nest.ts
+(66,23): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(66,30): error TS7006: Parameter 'mapType' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(71,20): error TS2345: Argument of type 'Map<any, any>' is not assignable to parameter of type 'T[]'.
+  Property 'find' is missing in type 'Map<any, any>'.
+
+ERROR in ./arrays/nest.ts
+(88,30): error TS7006: Parameter 'order' implicitly has an 'any' type.
+
+ERROR in ./arrays/nest.ts
+(93,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/min.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./arrays/min.ts
+(11,17): error TS2394: Overload signature is not compatible with function implementation.
+
+ERROR in ./arrays/quantile.ts
+(2,34): error TS7006: Parameter 'values' implicitly has an 'any' type.
+
+ERROR in ./arrays/quantile.ts
+(2,42): error TS7006: Parameter 'p' implicitly has an 'any' type.
+
+ERROR in ./arrays/max.ts
+(1,23): error TS2307: Cannot find module '../types/Numeric'.
+
+ERROR in ./math/number.ts
+(1,27): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./math/number.ts
+(5,28): error TS7006: Parameter 'x' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,34): error TS7006: Parameter 'array' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(3,41): error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(6,7): error TS7005: Variable 'a' implicitly has an 'any' type.
+
+ERROR in ./arrays/variance.ts
+(7,7): error TS7005: Variable 'd' implicitly has an 'any' type.

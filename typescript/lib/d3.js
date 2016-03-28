@@ -59,8 +59,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	/// <reference path="typings/main.d.ts" />
-	exports.version = ("[object Object]");
-	console.log(("[object Object]"));
+	exports.version = ("3523");
 	__export(__webpack_require__(1));
 	__export(__webpack_require__(3));
 	__export(__webpack_require__(6));
@@ -89,46 +88,47 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const ascending_1 = __webpack_require__(2);
-	class d3_bisector {
-	    constructor(compare) {
+	var ascending_1 = __webpack_require__(2);
+	var d3_bisector = (function () {
+	    function d3_bisector(compare) {
 	        this.compare = compare;
 	    }
-	    left(a, x, lo, hi) {
+	    d3_bisector.prototype.left = function (a, x, lo, hi) {
 	        if (arguments.length < 3)
 	            lo = 0;
 	        if (arguments.length < 4)
 	            hi = a.length;
 	        while (lo < hi) {
-	            let mid = lo + hi >>> 1;
+	            var mid = lo + hi >>> 1;
 	            if (this.compare(a[mid], x) < 0)
 	                lo = mid + 1;
 	            else
 	                hi = mid;
 	        }
 	        return lo;
-	    }
-	    right(a, x, lo, hi) {
+	    };
+	    d3_bisector.prototype.right = function (a, x, lo, hi) {
 	        if (arguments.length < 3)
 	            lo = 0;
 	        if (arguments.length < 4)
 	            hi = a.length;
 	        while (lo < hi) {
-	            let mid = lo + hi >>> 1;
+	            var mid = lo + hi >>> 1;
 	            if (this.compare(a[mid], x) > 0)
 	                hi = mid;
 	            else
 	                lo = mid + 1;
 	        }
 	        return lo;
-	    }
-	}
-	let d3_bisect = new d3_bisector(ascending_1.d3_ascending);
-	let bisectLeft = d3_bisect.left;
+	    };
+	    return d3_bisector;
+	}());
+	var d3_bisect = new d3_bisector(ascending_1.d3_ascending);
+	var bisectLeft = d3_bisect.left;
 	exports.bisectLeft = bisectLeft;
-	let bisectRight = d3_bisect.right;
+	var bisectRight = d3_bisect.right;
 	exports.bisectRight = bisectRight;
-	let bisect = bisectRight;
+	var bisect = bisectRight;
 	exports.bisect = bisect;
 	function bisector(f) {
 	    return new d3_bisector(f.length === 1
@@ -155,9 +155,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const variance_1 = __webpack_require__(4);
+	var variance_1 = __webpack_require__(4);
 	function deviation() {
-	    let v = variance_1.default.apply(this, arguments);
+	    var v = variance_1.default.apply(this, arguments);
 	    return v ? Math.sqrt(v) : v;
 	}
 	exports.deviation = deviation;
@@ -168,9 +168,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const number_1 = __webpack_require__(5);
+	var number_1 = __webpack_require__(5);
 	function variance(array, f) {
-	    let n = array.length, m = 0, a, d, s = 0, i = -1, j = 0;
+	    var n = array.length, m = 0, a, d, s = 0, i = -1, j = 0;
 	    if (arguments.length === 1) {
 	        while (++i < n) {
 	            if (number_1.d3_numeric(a = number_1.d3_number(array[i]))) {
@@ -217,8 +217,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	function entries(map) {
-	    let entries = [];
-	    for (let key in map)
+	    var entries = [];
+	    for (var key in map)
 	        entries.push({ key: key, value: map[key] });
 	    return entries;
 	}
@@ -235,8 +235,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param object a JavaScript object
 	 */
 	function keys(map) {
-	    let keys = [];
-	    for (let key in map)
+	    var keys = [];
+	    for (var key in map)
 	        keys.push(key);
 	    return keys;
 	}
@@ -253,12 +253,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Construct a new map by copying enumerable properties and values from the given object.
 	 */
 	function map(object, f) {
-	    let map = new Map();
+	    var map = new Map();
 	    if (object instanceof Map) {
-	        object.forEach((key, value) => { map.set(key, value); });
+	        object.forEach(function (key, value) { map.set(key, value); });
 	    }
 	    else if (Array.isArray(object)) {
-	        let i = -1, n = object.length, o;
+	        var i = -1, n = object.length, o = void 0;
 	        if (arguments.length === 1)
 	            while (++i < n)
 	                map.set(i, object[i]);
@@ -267,7 +267,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                map.set(f.call(object, o = object[i], i), o);
 	    }
 	    else {
-	        for (let key in object)
+	        for (var key in object)
 	            map.set(key, object[key]);
 	    }
 	    return map;
@@ -281,7 +281,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	function max(array, f) {
-	    let i = -1, n = array.length, a, b;
+	    var i = -1, n = array.length, a, b;
 	    if (arguments.length === 1) {
 	        while (++i < n)
 	            if ((b = array[i]) != null && b >= b) {
@@ -312,9 +312,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const number_1 = __webpack_require__(5);
+	var number_1 = __webpack_require__(5);
 	function mean(array, f) {
-	    let s = 0, n = array.length, a, i = -1, j = n;
+	    var s = 0, n = array.length, a, i = -1, j = n;
 	    if (arguments.length === 1) {
 	        while (++i < n)
 	            if (number_1.d3_numeric(a = number_1.d3_number(array[i])))
@@ -340,11 +340,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const number_1 = __webpack_require__(5);
-	const ascending_1 = __webpack_require__(2);
-	const quantile_1 = __webpack_require__(12);
+	var number_1 = __webpack_require__(5);
+	var ascending_1 = __webpack_require__(2);
+	var quantile_1 = __webpack_require__(12);
 	function median(array, f) {
-	    let numbers = [], n = array.length, a, i = -1;
+	    var numbers = [], n = array.length, a, i = -1;
 	    if (arguments.length === 1) {
 	        while (++i < n)
 	            if (number_1.d3_numeric(a = number_1.d3_number(array[i])))
@@ -369,7 +369,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	"use strict";
 	// R-7 per <http://en.wikipedia.org/wiki/Quantile>
 	function quantile(values, p) {
-	    let H = (values.length - 1) * p + 1, h = Math.floor(H), v = +values[h - 1], e = H - h;
+	    var H = (values.length - 1) * p + 1, h = Math.floor(H), v = +values[h - 1], e = H - h;
 	    return e ? v + e * (values[h] - v) : v;
 	}
 	Object.defineProperty(exports, "__esModule", { value: true });
@@ -385,7 +385,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	"use strict";
 	function merge(arrays) {
-	    let n = arrays.length, m, i = -1, j = 0, merged, array;
+	    var n = arrays.length, m, i = -1, j = 0, merged, array;
 	    while (++i < n)
 	        j += arrays[i].length;
 	    merged = new Array(j);
@@ -407,7 +407,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	function min(array, f) {
-	    let i = -1, n = array.length, a, b;
+	    var i = -1, n = array.length, a, b;
 	    if (arguments.length === 1) {
 	        while (++i < n)
 	            if ((b = array[i]) != null && b >= b) {
@@ -440,14 +440,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	"use strict";
 	// Possible use of native Map here
 	function nest() {
-	    let nest = {}, keys = [], sortKeys = [], sortValues = [], rollup;
+	    var nest = {}, keys = [], sortKeys = [], sortValues = [], rollup;
 	    function map(mapType, array, depth) {
 	        if (depth >= keys.length)
 	            return rollup
 	                ? rollup.call(nest, array) : (sortValues
 	                ? array.sort(sortValues)
 	                : array);
-	        let i = -1, n = array.length, key = keys[depth++], keyValue, object, setter, valuesByKey = new Map(), values;
+	        var i = -1, n = array.length, key = keys[depth++], keyValue, object, setter, valuesByKey = new Map(), values;
 	        while (++i < n) {
 	            if (values = valuesByKey.get(keyValue = key(object = array[i]))) {
 	                values.push(object);
@@ -458,13 +458,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	        if (mapType) {
 	            object = mapType();
-	            setter = (keyValue, values) => {
+	            setter = function (keyValue, values) {
 	                object.set(keyValue, map(mapType, values, depth));
 	            };
 	        }
 	        else {
 	            object = {};
-	            setter = (keyValue, values) => {
+	            setter = function (keyValue, values) {
 	                object[keyValue] = map(mapType, values, depth);
 	            };
 	        }
@@ -474,7 +474,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    function entries(map, depth) {
 	        if (depth >= keys.length)
 	            return map;
-	        let array = [], sortKey = sortKeys[depth++];
+	        var array = [], sortKey = sortKeys[depth++];
 	        map.forEach(function (key, keyMap) {
 	            array.push({ key: key, values: entries(keyMap, depth) });
 	        });
@@ -519,7 +519,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 	function pairs(array) {
-	    let i = 0, n = array.length - 1, p0, p1 = array[0], pairs = new Array(n < 0 ? 0 : n);
+	    var i = 0, n = array.length - 1, p0, p1 = array[0], pairs = new Array(n < 0 ? 0 : n);
 	    while (i < n)
 	        pairs[i] = [p0 = p1, p1 = array[++i]];
 	    return pairs;
@@ -533,7 +533,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const abs_1 = __webpack_require__(18);
+	var abs_1 = __webpack_require__(18);
 	function range(start, stop, step) {
 	    if (arguments.length < 3) {
 	        step = 1;
@@ -544,7 +544,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    if ((stop - start) / step === Infinity)
 	        throw new Error("infinite range");
-	    let range = [], k = d3_range_integerScale(abs_1.default(step)), i = -1, j;
+	    var range = [], k = d3_range_integerScale(abs_1.default(step)), i = -1, j;
 	    start *= k, stop *= k, step *= k;
 	    if (step < 0)
 	        while ((j = start + step * ++i) > stop)
@@ -558,7 +558,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = range;
 	;
 	function d3_range_integerScale(x) {
-	    let k = 1;
+	    var k = 1;
 	    while (x * k % 1)
 	        k *= 10;
 	    return k;
@@ -596,7 +596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (m < 2)
 	            i0 = 0;
 	    }
-	    let m = i1 - i0, t, i;
+	    var m = i1 - i0, t, i;
 	    while (m) {
 	        i = Math.random() * m-- | 0;
 	        t = array[m + i0], array[m + i0] = array[i + i0], array[i + i0] = t;
@@ -612,9 +612,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const number_1 = __webpack_require__(5);
+	var number_1 = __webpack_require__(5);
 	function sum(array, f) {
-	    let s = 0, n = array.length, a, i = -1;
+	    var s = 0, n = array.length, a, i = -1;
 	    if (arguments.length === 1) {
 	        while (++i < n)
 	            if (number_1.d3_numeric(a = +array[i]))
@@ -636,12 +636,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const min_1 = __webpack_require__(14);
+	var min_1 = __webpack_require__(14);
 	function transpose(matrix) {
+	    var n;
 	    if (!(n = matrix.length))
 	        return [];
-	    for (let i = -1, m = min_1.default(matrix, d3_transposeLength), transpose = new Array(m); ++i < m;) {
-	        for (let j = -1, n, row = transpose[i] = new Array(n); ++j < n;) {
+	    for (var i = -1, m = min_1.min(matrix, d3_transposeLength), transpose_1 = new Array(m); ++i < m;) {
+	        for (var j = -1, n_1, row = transpose_1[i] = new Array(n_1); ++j < n_1;) {
 	            row[j] = matrix[j][i];
 	        }
 	    }
@@ -672,8 +673,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const transpose_1 = __webpack_require__(22);
+	var transpose_1 = __webpack_require__(22);
 	function zip() {
+	    var arrays = [];
+	    for (var _i = 0; _i < arguments.length; _i++) {
+	        arrays[_i - 0] = arguments[_i];
+	    }
 	    return transpose_1.default(arguments);
 	}
 	Object.defineProperty(exports, "__esModule", { value: true });
