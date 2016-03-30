@@ -1,5 +1,5 @@
 import {map} from "./map";
-import {Nest} from "../types/Nest";
+import {Nest} from "../types/nest";
 
 // Possible use of native Map here
 export function nest<T>(): Nest<T> {

@@ -1,4 +1,4 @@
-import {Numeric} from "../types/Numeric";
+import {Numeric} from "../types/numeric";
 
 /**
  * Return the maximum value in the array of numbers using natural order.

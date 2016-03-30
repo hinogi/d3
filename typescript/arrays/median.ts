@@ -1,5 +1,5 @@
 import {d3_number, d3_numeric} from "../math/number";
-import {d3_ascending} from "./ascending";
+import ascending from "./ascending";
 import quantile from "./quantile";
 
 export function median(array: Array<any>, f?: Function): number {
@@ -12,5 +12,5 @@ export function median(array: Array<any>, f?: Function): number {
   } else {
     while (++i < n) if (d3_numeric(a = d3_number(f.call(array, array[i], i)))) numbers.push(a);
   }
-  if (numbers.length) return quantile(numbers.sort(d3_ascending), 0.5);
+  if (numbers.length) return quantile(numbers.sort(ascending), 0.5);
 };

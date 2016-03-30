@@ -1,13 +1,17 @@
 import {d3_number, d3_numeric} from "../math/number";
 
-export default function variance(array, f) {
-  let n = array.length,
-      m = 0,
-      a,
-      d,
-      s = 0,
-      i = -1,
-      j = 0;
+export function variance(array: number[]): number;
+
+export function variance<T>(array: T[], accessor: (datum: T, index: number) => number): number;
+
+export default function variance<T>(array: Array<number> | Array<T>, f?: (datum: T, index: number) => number): number {
+  let n: number = array.length,
+      m: number = 0,
+      a: number,
+      d: number,
+      s: number = 0,
+      i: number = -1,
+      j: number = 0;
   if (arguments.length === 1) {
     while (++i < n) {
       if (d3_numeric(a = d3_number(array[i]))) {

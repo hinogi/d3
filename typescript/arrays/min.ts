@@ -1,14 +1,14 @@
-import {Numeric} from "../types/Numeric";
+import {Numeric} from "../types/numeric";
 
 /**
  * Return the minimum value in the array using natural order.
  */
-export function min(array: number[]): number;
+export function min(array: Array<number>): number;
 
 /**
  * Return the minimum value in the array using natural order.
  */
-export function min(array: string[]): string;
+export function min(array: Array<string>): string;
 
 /**
  * Return the minimum value in the array using natural order.
@@ -30,7 +30,7 @@ export function min<T>(array: T[], accessor: (datum: T, index: number) => string
  */
 export function min<T, U extends Numeric>(array: T[], accessor: (datum: T, index: number) => U): U;
 
-export function min(array: Array<any>, f?: Function): number {
+export function min(array: Array<any>, f?: Function): any {
   let i: number = -1,
       n: number = array.length,
       a: any,

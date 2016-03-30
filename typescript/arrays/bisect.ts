@@ -1,4 +1,4 @@
-import {d3_ascending} from "./ascending";
+import ascending from "./ascending";
 
 class d3_bisector{
     compare: Function;
@@ -29,7 +29,7 @@ class d3_bisector{
     }
 }
 
-let d3_bisect = new d3_bisector(d3_ascending);
+let d3_bisect = new d3_bisector(ascending);
 let bisectLeft = d3_bisect.left;
 let bisectRight = d3_bisect.right;
 let bisect = bisectRight;
@@ -46,7 +46,7 @@ function bisector<T, U>(comparator: (a: T, b: U) => number): {
 
 function bisector(f: Function) {
   return new d3_bisector(f.length === 1
-      ? function(d: any, x: any) { return d3_ascending(f(d), x); }
+      ? function(d: any, x: any) { return ascending(f(d), x); }
       : f);
 }
 
